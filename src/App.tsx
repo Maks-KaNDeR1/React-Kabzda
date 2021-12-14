@@ -1,12 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Rating from "./Rating";
-import Accordion from "./Accordion";
+import Rating from "./components/Rating/Rating";
+import Accordion from "./components/Accordion/Accordion";
+import OnOff from './components/OnOff/OnOff';
 
 function App() {
     return (
         <div>
+            <OnOff switch={true}/>
+            <OnOff switch={false}/>
             <PageTitle title={"Hello, my friends"}/>
             <Accordion titleValue={"Accordidfon"} collapsed={false}/>
             <PageTitle title={"App components"}/>

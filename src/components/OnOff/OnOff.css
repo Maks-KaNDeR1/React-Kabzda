@@ -1,0 +1,30 @@
+
+
+
+.onOf {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.button {
+    border-radius: 5px;
+    width: 100px;
+    height: 60px
+    
+}
+
+.roundOff {
+  width: 10em;
+  height: 10em;
+  clip-path: circle(1em at 10% 20%);
+  background: rgb(255, 33, 33);
+  padding-left: 850px;
+}
+
+.roundOn {
+  width: 10em;
+  height: 10em;
+  clip-path: circle(1em at 10% 20%);
+  background: rgb(48, 255, 29);
+  padding-left: 850px;
+}
