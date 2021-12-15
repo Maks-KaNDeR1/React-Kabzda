@@ -1,4 +1,6 @@
-import React from 'react';
+
+
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Rating from "./components/Rating/Rating";
@@ -6,10 +8,15 @@ import Accordion from "./components/Accordion/Accordion";
 import OnOff from './components/OnOff/OnOff';
 
 function App() {
+
+    // let [switch, setSwitch] = useState(false)
+
+    
+    
     return (
         <div>
-            <OnOff switch={true}/>
-            <OnOff switch={false}/>
+            <OnOff />
+            <OnOff />
             <PageTitle title={"Hello, my friends"}/>
             <Accordion titleValue={"Accordidfon"} collapsed={false}/>
             <PageTitle title={"App components"}/>
