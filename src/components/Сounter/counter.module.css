@@ -1,0 +1,17 @@
+
+
+.button {
+    font-size: 70px;
+    width: 80px;
+    height: 80px;
+    border-radius: 25px;
+    border-color: rgb(102, 76, 126);
+    border-width: 3px;
+}
+
+.count {
+font-size: 70px;
+padding-left: 50px;
+background: 2px solid black ;
+
+}
