@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
-// type RatingPropsType = {
-//     value: 0 | 1 | 2 | 3 | 4 | 5
-// }
+
 
 function Rating(props: any) {
     console.log("Rating rendering")
