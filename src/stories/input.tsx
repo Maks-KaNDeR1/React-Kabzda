@@ -1,17 +1,7 @@
 import React, { ChangeEvent, useRef, useState } from 'react'
 
-function input() {
-    return (
-        <div>
 
-        </div>
-    )
-}
-
-export default input
-
-
-const trackValueOfUncontrolledInput = () => {
+const TrackValueOfUncontrolledInput = () => {
 
     const [value, setValue] = useState('')
 
@@ -23,6 +13,40 @@ const trackValueOfUncontrolledInput = () => {
     return <><input value={value} onChange={onChange} /> - {value}</>
 
 }
+
+const ControlledInput = () => {
+    const [parentValue, setParentValue] = useState('')
+
+    const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setParentValue(e.currentTarget.value)
+    }
+    return <input value={parentValue} onChange={onChange} />
+}
+
+const ControlledCheckbox = () => {
+    const [parentValue, setParentValue] = useState(true)
+
+    const onChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setParentValue(e.currentTarget.checked)
+    }
+    return <input type='checkbox' checked={parentValue} onChange={onChange} />
+}
+
+const ControlledSelect = () => {
+    const [parentValue, setParentValue] = useState<string | undefined>('1')
+
+    const onChange = (e: ChangeEvent<HTMLSelectElement>) => {
+        setParentValue(e.currentTarget.value)
+    }
+    return <select value={parentValue} onChange={onChange}>
+        <option>none</option>
+        <option value={'1'} >Minsk</option>
+        <option value={'2'}>Moscow</option>
+        <option value={'3'}>Krasnodar</option>
+    </select>
+}
+
+
 
 const GetValueOfUncontrolledInputByButtonPress = () => {
 
